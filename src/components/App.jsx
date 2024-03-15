@@ -18,8 +18,8 @@ function App() {
             <Header />
             <main>
                 <Routes>
-                    <Route path="cu" element={
-                        <Main setCategoryName={setCategoryName} />
+                    <Route path="*" element={
+                        <Main />
                     } />
 
                     <Route path="auth" element={

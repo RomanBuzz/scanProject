@@ -2,7 +2,6 @@ import * as React from "react";
 import { useParams } from "react-router-dom";
 
 import "../styles/RecipeSelector.css";
-import { getRecipe } from "../services/djangoService";
 
 function RecipeSelector() {
     let [recipe, setRecipe] = React.useState([]);

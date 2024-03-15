@@ -5,7 +5,7 @@ header.header__content {
     background: #FFFFFF;
     display: flex;
     align-items: center;
-    margin-bottom: 30px;
+    margin: 0;
     padding: 0;
     justify-content: space-between;
     font-family: Inter, sans-serif;

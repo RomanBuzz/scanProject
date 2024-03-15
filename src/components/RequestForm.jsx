@@ -3,7 +3,6 @@ import { useParams, Link } from "react-router-dom";
 import Table from 'react-bootstrap/Table';
 
 import "../styles/RecipesListForCategory.css";
-import { getRecipesListForCategory } from "../services/djangoService";
 
 function RecipesListForCategory(props) {
     let [recipes, setRecipes] = React.useState([]);
