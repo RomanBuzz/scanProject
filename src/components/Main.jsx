@@ -96,6 +96,70 @@ function Main() {
                     <img className="carousel__arrow arrow_right" src={require('./../images/arrow_right.svg')} alt="right arrow" />
                 </div>
             </div>
+
+            <div className="main__group_3" >
+                <img src={require('./../images/group_3.svg')} alt="image" />
+            </div>
+
+            <div className="main__group_4" >
+                <div className="group_name">наши тарифы</div>
+                <div className="items">
+                    <div className="tabs-collection">
+                        <div className="tabs-collection__item">
+                            <div className="tariff__header">
+                                <div className="tariff_info">
+                                    <div className="tariff_name">Beginner</div>
+                                    <div className="tariff_description">Для небольшого исследования</div>
+                                </div>
+                                <img className="tariff_image" src={require('./../images/carousel_01.svg')} alt="tariff image" />
+                            </div>
+                            <div className="tariff__current">
+                                <div className="current">Текущий тариф</div>
+                            </div>
+                            <div className="tariff__price">
+                                <div className="price">
+                                    <div className="price__new">799 ₽</div>
+                                    <div className="price__old">1 200 ₽</div>
+                                </div>
+                                <div className="price_info">или 150 ₽/мес. при рассрочке на 24 мес.</div>
+                            </div>
+                            <div className="tariff_info">
+                                <div className="tariff_info__header">В тариф входит:</div>
+                                <div className="tariff_info__items">
+                                    <div>
+                                        <img src={require('./../images/carousel_02.svg')} alt="carousel item logo" />
+                                        <div>Безлимитная история запросов</div>
+                                    </div>
+                                    <div>
+                                        <img src={require('./../images/carousel_02.svg')} alt="carousel item logo" />
+                                        <div>Безопасная сделка</div>
+                                    </div>
+                                    <div>
+                                        <img src={require('./../images/carousel_02.svg')} alt="carousel item logo" />
+                                        <div>Поддержка 24/7</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="tariff__button">
+                                <button>Перейти в личный кабинет</button>
+                            </div>
+                        </div>
+                        <div className="tabs-collection__item">
+                            <img src={require('./../images/carousel_02.svg')} alt="carousel item logo" />
+                            <div className="text_info">
+                                Огромная комплексная база данных, обеспечивающая объективный ответ на запрос
+                            </div>
+                        </div>
+                        <div className="tabs-collection__item">
+                            <img src={require('./../images/carousel_03.svg')} alt="carousel item logo" />
+                            <div className="text_info">
+                                Защита конфеденциальных сведений, не подлежащих разглашению по федеральному законодательству
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
         </>
     );
 }
