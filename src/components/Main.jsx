@@ -50,7 +50,7 @@ function Main() {
                     }>
                         {serviceInfo}
                     </div>
-                    <button>Запросить данные</button>
+                    <button className="text_info_bold">Запросить данные</button>
                 </div>
                 <div className="column column--right">
                     <img src={require('./../images/main_group_1_logo.svg')} alt="main logo" />
@@ -108,13 +108,13 @@ function Main() {
                         <div className="tabs-collection__item">
                             <div className="tariff__header">
                                 <div className="tariff_info">
-                                    <div className="tariff_name">Beginner</div>
-                                    <div className="tariff_description">Для небольшого исследования</div>
+                                    <div className="tariff_name text_info_bold">Beginner</div>
+                                    <div className="tariff_description text_info">Для небольшого исследования</div>
                                 </div>
-                                <img className="tariff_image" src={require('./../images/carousel_01.svg')} alt="tariff image" />
+                                <img className="tariff_image" src={require('./../images/Tariff_img_01.svg')} alt="tariff image" />
                             </div>
                             <div className="tariff__current">
-                                <div className="current">Текущий тариф</div>
+                                <div className="current text_info">Текущий тариф</div>
                             </div>
                             <div className="tariff__price">
                                 <div className="price">
@@ -127,33 +127,99 @@ function Main() {
                                 <div className="tariff_info__header">В тариф входит:</div>
                                 <div className="tariff_info__items">
                                     <div>
-                                        <img src={require('./../images/carousel_02.svg')} alt="carousel item logo" />
+                                        <img src={require('./../images/check_mark.svg')} alt="check mark image" />
                                         <div>Безлимитная история запросов</div>
                                     </div>
                                     <div>
-                                        <img src={require('./../images/carousel_02.svg')} alt="carousel item logo" />
+                                        <img src={require('./../images/check_mark.svg')} alt="check mark image" />
                                         <div>Безопасная сделка</div>
                                     </div>
                                     <div>
-                                        <img src={require('./../images/carousel_02.svg')} alt="carousel item logo" />
+                                        <img src={require('./../images/check_mark.svg')} alt="check mark image" />
                                         <div>Поддержка 24/7</div>
                                     </div>
                                 </div>
                             </div>
                             <div className="tariff__button">
-                                <button>Перейти в личный кабинет</button>
+                                <button>Подробнее</button>
                             </div>
                         </div>
                         <div className="tabs-collection__item">
-                            <img src={require('./../images/carousel_02.svg')} alt="carousel item logo" />
-                            <div className="text_info">
-                                Огромная комплексная база данных, обеспечивающая объективный ответ на запрос
+                            <div className="tariff__header">
+                                <div className="tariff_info">
+                                    <div className="tariff_name text_info_bold">Pro</div>
+                                    <div className="tariff_description text_info">Для HR и фрилансеров</div>
+                                </div>
+                                <img className="tariff_image" src={require('./../images/Tariff_img_02.svg')} alt="tariff image" />
+                            </div>
+                            <div className="tariff__current">
+                                <div className="current text_info">Текущий тариф</div>
+                            </div>
+                            <div className="tariff__price">
+                                <div className="price">
+                                    <div className="price__new">1 299 ₽</div>
+                                    <div className="price__old">2 600 ₽</div>
+                                </div>
+                                <div className="price_info">или 279 ₽/мес. при рассрочке на 24 мес.</div>
+                            </div>
+                            <div className="tariff_info">
+                                <div className="tariff_info__header">В тариф входит:</div>
+                                <div className="tariff_info__items">
+                                    <div>
+                                        <img src={require('./../images/check_mark.svg')} alt="check mark image" />
+                                        <div>Все пункты тарифа Beginner</div>
+                                    </div>
+                                    <div>
+                                        <img src={require('./../images/check_mark.svg')} alt="check mark image" />
+                                        <div>Экспорт истории</div>
+                                    </div>
+                                    <div>
+                                        <img src={require('./../images/check_mark.svg')} alt="check mark image" />
+                                        <div>Рекомендации по приоритетам</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="tariff__button">
+                                <button>Подробнее</button>
                             </div>
                         </div>
                         <div className="tabs-collection__item">
-                            <img src={require('./../images/carousel_03.svg')} alt="carousel item logo" />
-                            <div className="text_info">
-                                Защита конфеденциальных сведений, не подлежащих разглашению по федеральному законодательству
+                            <div className="tariff__header">
+                                <div className="tariff_info">
+                                    <div className="tariff_name text_info_bold">Business</div>
+                                    <div className="tariff_description text_info">Для корпоративных клиентов</div>
+                                </div>
+                                <img className="tariff_image" src={require('./../images/Tariff_img_03.svg')} alt="tariff image" />
+                            </div>
+                            <div className="tariff__current">
+                                <div className="current text_info">Текущий тариф</div>
+                            </div>
+                            <div className="tariff__price">
+                                <div className="price">
+                                    <div className="price__new">2 379 ₽</div>
+                                    <div className="price__old">3 700 ₽</div>
+                                </div>
+                                <div className="price_info"></div>
+                            </div>
+                            <div className="tariff_info">
+                                <div className="tariff_info__header">В тариф входит:</div>
+                                <div className="tariff_info__items">
+                                    <div>
+                                        <img src={require('./../images/check_mark.svg')} alt="check mark image" />
+                                        <div>Все пункты тарифа Pro</div>
+                                    </div>
+                                    <div>
+                                        <img src={require('./../images/check_mark.svg')} alt="check mark image" />
+                                        <div>Безлимитное количество запросов</div>
+                                    </div>
+                                    <div>
+                                        <img src={require('./../images/check_mark.svg')} alt="check mark image" />
+                                        <div>Приоритетная поддержка</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="tariff__button">
+                                <button>Подробнее</button>
                             </div>
                         </div>
                     </div>
