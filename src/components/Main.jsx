@@ -117,31 +117,31 @@ function Main() {
                                 <div className="current text_info">Текущий тариф</div>
                             </div>
                             <div className="tariff__price">
-                                <div className="price">
+                                <div className="price text_info_bold">
                                     <div className="price__new">799 ₽</div>
                                     <div className="price__old">1 200 ₽</div>
                                 </div>
-                                <div className="price_info">или 150 ₽/мес. при рассрочке на 24 мес.</div>
+                                <div className="price_info text_info">или 150 ₽/мес. при рассрочке на 24 мес.</div>
                             </div>
                             <div className="tariff_info">
-                                <div className="tariff_info__header">В тариф входит:</div>
-                                <div className="tariff_info__items">
-                                    <div>
+                                <div className="tariff_info__header text_info_bold">В тариф входит:</div>
+                                <div className="tariff_info__items text_info">
+                                    <div className="item">
                                         <img src={require('./../images/check_mark.svg')} alt="check mark image" />
                                         <div>Безлимитная история запросов</div>
                                     </div>
-                                    <div>
+                                    <div className="item">
                                         <img src={require('./../images/check_mark.svg')} alt="check mark image" />
                                         <div>Безопасная сделка</div>
                                     </div>
-                                    <div>
+                                    <div className="item">
                                         <img src={require('./../images/check_mark.svg')} alt="check mark image" />
                                         <div>Поддержка 24/7</div>
                                     </div>
                                 </div>
                             </div>
                             <div className="tariff__button">
-                                <button>Подробнее</button>
+                                <button className="text_info">Подробнее</button>
                             </div>
                         </div>
                         <div className="tabs-collection__item">
@@ -156,31 +156,31 @@ function Main() {
                                 <div className="current text_info">Текущий тариф</div>
                             </div>
                             <div className="tariff__price">
-                                <div className="price">
+                                <div className="price text_info_bold">
                                     <div className="price__new">1 299 ₽</div>
                                     <div className="price__old">2 600 ₽</div>
                                 </div>
-                                <div className="price_info">или 279 ₽/мес. при рассрочке на 24 мес.</div>
+                                <div className="price_info text_info">или 279 ₽/мес. при рассрочке на 24 мес.</div>
                             </div>
                             <div className="tariff_info">
-                                <div className="tariff_info__header">В тариф входит:</div>
-                                <div className="tariff_info__items">
-                                    <div>
+                                <div className="tariff_info__header text_info_bold">В тариф входит:</div>
+                                <div className="tariff_info__items text_info">
+                                    <div className="item">
                                         <img src={require('./../images/check_mark.svg')} alt="check mark image" />
                                         <div>Все пункты тарифа Beginner</div>
                                     </div>
-                                    <div>
+                                    <div className="item">
                                         <img src={require('./../images/check_mark.svg')} alt="check mark image" />
                                         <div>Экспорт истории</div>
                                     </div>
-                                    <div>
+                                    <div className="item">
                                         <img src={require('./../images/check_mark.svg')} alt="check mark image" />
                                         <div>Рекомендации по приоритетам</div>
                                     </div>
                                 </div>
                             </div>
                             <div className="tariff__button">
-                                <button>Подробнее</button>
+                                <button className="text_info">Подробнее</button>
                             </div>
                         </div>
                         <div className="tabs-collection__item">
@@ -195,31 +195,31 @@ function Main() {
                                 <div className="current text_info">Текущий тариф</div>
                             </div>
                             <div className="tariff__price">
-                                <div className="price">
+                                <div className="price text_info_bold">
                                     <div className="price__new">2 379 ₽</div>
                                     <div className="price__old">3 700 ₽</div>
                                 </div>
-                                <div className="price_info"></div>
+                                <div className="price_info text_info"></div>
                             </div>
                             <div className="tariff_info">
-                                <div className="tariff_info__header">В тариф входит:</div>
-                                <div className="tariff_info__items">
-                                    <div>
+                                <div className="tariff_info__header text_info_bold">В тариф входит:</div>
+                                <div className="tariff_info__items text_info">
+                                    <div className="item">
                                         <img src={require('./../images/check_mark.svg')} alt="check mark image" />
                                         <div>Все пункты тарифа Pro</div>
                                     </div>
-                                    <div>
+                                    <div className="item">
                                         <img src={require('./../images/check_mark.svg')} alt="check mark image" />
                                         <div>Безлимитное количество запросов</div>
                                     </div>
-                                    <div>
+                                    <div className="item">
                                         <img src={require('./../images/check_mark.svg')} alt="check mark image" />
                                         <div>Приоритетная поддержка</div>
                                     </div>
                                 </div>
                             </div>
                             <div className="tariff__button">
-                                <button>Подробнее</button>
+                                <button className="text_info">Подробнее</button>
                             </div>
                         </div>
                     </div>
