@@ -1,36 +1,48 @@
 import * as React from "react";
-import { useParams } from "react-router-dom";
 
-import "../styles/RecipeSelector.css";
+import "../styles/AuthForm.css";
 
-function RecipeSelector() {
-    let [recipe, setRecipe] = React.useState([]);
-    const params = useParams();
+function AuthForm() {
+    let serviceName = "Для оформления подписки\n\на тариф, необходимо\n\авторизоваться.";
+
     React.useEffect(() => {
-        if (!recipe.length) {
-            getRecipe(params.recipe_pk).then((value) => {
-                if (value.length) { setRecipe(value) };
-                console.log('Recipe: ', value);
-            });
-        }
+
     }, []);
 
     return (
-        <div className="recipe" >
-            {recipe[0] ? (
-                <>
-                    <div className="column column--left">
-                        <div className="column--name">Название блюда:</div>
-                        <div className="column--info">{recipe[0].dish}</div>
+        <div className="auth__page">
+            <div className="column column--left">
+                <div className="service_name group_name" style={
+                    {
+                        whiteSpace: 'pre-line',
+                    }
+                }>
+                    {serviceName}
+                </div>
+                <img src={require('./../images/auth_characters.svg')} alt="auth logo" />
+            </div>
+            <div className="column column--right">
+                <img className="lock_img" src={require('./../images/auth_lock.svg')} alt="authform logo" />
+                <div className="form_auth_block">
+                    <div className="form_auth_block_content">
+                        <p className="form_auth_block_head_text">Авторизация</p>
+                        <form className="form_auth_style" action="#" method="post">
+                            <label>Логин или номер телефона:</label>
+                            <input type="text" name="auth_name" placeholder="Введите Ваш имейл" required />
+                            <label>Пароль:</label>
+                            <input type="password" name="auth_pass" placeholder="Введите пароль" required />
+                            <button className="form_auth_button" type="submit" name="form_auth_submit">Войти</button>
+                        </form>
+                        <div className="social_media_auth">
+                            <img src={require('./../images/auth_google.svg')} alt="google auth" />
+                            <img src={require('./../images/auth_facebook.svg')} alt="facebook auth" />
+                            <img src={require('./../images/auth_yandex.svg')} alt="yandex auth" />
+                        </div>
                     </div>
-                    <div className="column column--right">
-                        <div className="column--name">Рецепт блюда:</div>
-                        <div className="column--info">{recipe[0].recipe}</div>
-                    </div>
-                </>
-            ) : (<p>Ожидаем ответа API...</p>)}
+                </div>
+            </div>
         </div >
     );
 }
 
-export default RecipeSelector;
+export default AuthForm;

@@ -23,7 +23,7 @@ function Header() {
                     <div className="header__buttons">
                         <Link to="/">Главная</Link>
                         <Link to="/" className="button--right">Тарифы</Link>
-                        <Link to="/" className="button--right">FAQ</Link>
+                        <Link to="auth" className="button--right">FAQ</Link>
                     </div>
                 </div>
             </div>

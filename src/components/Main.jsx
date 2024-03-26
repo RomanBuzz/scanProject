@@ -1,40 +1,96 @@
 import * as React from "react";
-import { Link } from "react-router-dom";
 
 import "../styles/Main.css";
 
 function Main() {
     let serviceName = "сервис по поиску\n\публикаций\n\о компании\n\по его ИНН";
     let serviceInfo = "Комплексный анализ публикаций, получение данных\n\в формате PDF на электронную почту.";
-    let groupElement;
+    let group2Element;
+    let group4Element;
 
     const carousel = () => {
-        let arrowLeft = groupElement.querySelector('.carousel__arrow.arrow_left');
-        let arrowRight = groupElement.querySelector('.carousel__arrow.arrow_right');
-        let itemsGroup = groupElement.querySelector('.tabs-collection');
-        let items = groupElement.querySelectorAll('.tabs-collection__item');
+        let arrowLeft = group2Element.querySelector('.main__group_2 .carousel__arrow.arrow_left');
+        let arrowRight = group2Element.querySelector('.main__group_2 .carousel__arrow.arrow_right');
+        let itemsGroup = group2Element.querySelector('.main__group_2 .tabs-collection');
+        let items = group2Element.querySelectorAll('.main__group_2 .tabs-collection__item');
         let node;
         arrowLeft.onclick = () => {
             node = items[0];
             items[0].remove();
             itemsGroup.appendChild(node);
-            items = groupElement.querySelectorAll('.tabs-collection__item');
+            items = group2Element.querySelectorAll('.main__group_2 .tabs-collection__item');
         }
         arrowRight.onclick = () => {
             node = items[items.length - 1];
             items[items.length - 1].remove();
             itemsGroup.insertBefore(node, items[0]);
-            items = groupElement.querySelectorAll('.tabs-collection__item');
+            items = group2Element.querySelectorAll('.main__group_2 .tabs-collection__item');
+        }
+    }
+
+    const tariff = () => {
+        let items = group4Element.querySelectorAll('.main__group_4 .tabs-collection__item');
+        items[0].onclick = () => {
+            items[0].style.border = "2px solid #FFB64F";
+            items[0].querySelector('.tariff__current .current').style.display = "flex";
+            items[0].querySelector('button').innerHTML = "Перейти в личный кабинет";
+            items[0].querySelector('button').style.backgroundColor = "#D2D2D2";
+            items[0].querySelector('button').style.color = "#000000";
+            items[1].style.border = "";
+            items[1].querySelector('.tariff__current .current').style.display = "none";
+            items[1].querySelector('button').innerHTML = "Подробнее";
+            items[1].querySelector('button').style.backgroundColor = "#5970FF";
+            items[1].querySelector('button').style.color = "#FFFFFF";
+            items[2].style.border = "";
+            items[2].querySelector('.tariff__current .current').style.display = "none";
+            items[2].querySelector('button').innerHTML = "Подробнее";
+            items[2].querySelector('button').style.backgroundColor = "#5970FF";
+            items[2].querySelector('button').style.color = "#FFFFFF";
+        }
+        items[1].onclick = () => {
+            items[0].style.border = "";
+            items[0].querySelector('.tariff__current .current').style.display = "none";
+            items[0].querySelector('button').innerHTML = "Подробнее";
+            items[0].querySelector('button').style.backgroundColor = "#5970FF";
+            items[0].querySelector('button').style.color = "#FFFFFF";
+            items[1].style.border = "2px solid #7CE3E1";
+            items[1].querySelector('.tariff__current .current').style.display = "flex";
+            items[1].querySelector('button').innerHTML = "Перейти в личный кабинет";
+            items[1].querySelector('button').style.backgroundColor = "#D2D2D2";
+            items[1].querySelector('button').style.color = "#000000";
+            items[2].style.border = "";
+            items[2].querySelector('.tariff__current .current').style.display = "none";
+            items[2].querySelector('button').innerHTML = "Подробнее";
+            items[2].querySelector('button').style.backgroundColor = "#5970FF";
+            items[2].querySelector('button').style.color = "#FFFFFF";
+        }
+        items[2].onclick = () => {
+            items[0].style.border = "";
+            items[0].querySelector('.tariff__current .current').style.display = "none";
+            items[0].querySelector('button').innerHTML = "Подробнее";
+            items[0].querySelector('button').style.backgroundColor = "#5970FF";
+            items[0].querySelector('button').style.color = "#FFFFFF";
+            items[1].style.border = "";
+            items[1].querySelector('.tariff__current .current').style.display = "none";
+            items[1].querySelector('button').innerHTML = "Подробнее";
+            items[1].querySelector('button').style.backgroundColor = "#5970FF";
+            items[1].querySelector('button').style.color = "#FFFFFF";
+            items[2].style.border = "2px solid #000000";
+            items[2].querySelector('.tariff__current .current').style.display = "flex";
+            items[2].querySelector('button').innerHTML = "Перейти в личный кабинет";
+            items[2].querySelector('button').style.backgroundColor = "#D2D2D2";
+            items[2].querySelector('button').style.color = "#000000";
         }
     }
 
     React.useEffect(() => {
         carousel();
+        tariff();
     }, []);
 
     return (
         <>
-            <div className="main__group_1" >
+            <div className="main__group_1">
                 <div className="column column--left">
                     <h1 className="group_name" style={
                         {
@@ -57,7 +113,7 @@ function Main() {
                 </div>
             </div >
 
-            <div className="main__group_2" ref={(element) => { groupElement = element }}>
+            <div className="main__group_2" ref={(element) => { group2Element = element }}>
                 <div className="group_name">Почему именно мы</div>
                 <div className="carousel">
                     <img className="carousel__arrow arrow_left" src={require('./../images/arrow_left.svg')} alt="left arrow" />
@@ -97,11 +153,11 @@ function Main() {
                 </div>
             </div>
 
-            <div className="main__group_3" >
+            <div className="main__group_3">
                 <img src={require('./../images/group_3.svg')} alt="image" />
             </div>
 
-            <div className="main__group_4" >
+            <div className="main__group_4" ref={(element) => { group4Element = element }}>
                 <div className="group_name">наши тарифы</div>
                 <div className="items">
                     <div className="tabs-collection">

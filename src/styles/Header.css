@@ -12,6 +12,7 @@ header.header__content {
     font-weight: 400;
     font-size: 14px;
     line-height: 16.94px;
+    letter-spacing: 0.14px;
 }
 
 header.header__content .column {
@@ -119,6 +120,7 @@ header.header__content .column.column--authorized .name-block div {
 header.header__content .column.column--authorized .name-block a {
     font-size: 10px;
     line-height: 12.1px;
+    letter-spacing: 0.1px;
     opacity: 40%;
 }
 
@@ -146,6 +148,7 @@ header.header__content .column.column--loading .name--column {
     justify-content: flex-start;
     font-size: 10px;
     line-height: 12.1px;
+    letter-spacing: 0.1px;
     color: rgba(0, 0, 0, 0.4);
     height: 63px;
 }

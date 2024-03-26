@@ -12,6 +12,7 @@ footer.footer__content {
     font-weight: 400;
     font-size: 14px;
     line-height: 16.94px;
+    letter-spacing: 0.14px;
 }
 
 footer.footer__content .column {
@@ -61,6 +62,7 @@ footer .footer__copyright {
     width: 92px;
     font-size: 12px;
     line-height: 14.52px;
+    letter-spacing: 0.12px;
     margin-bottom: 25px;
 }
 

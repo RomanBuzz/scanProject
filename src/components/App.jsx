@@ -23,7 +23,7 @@ function App() {
                     } />
 
                     <Route path="auth" element={
-                        <AuthForm url="http://localhost:8000/openapi/" />
+                        <AuthForm />
                     } />
 
                     <Route path="category/:category_pk" element={

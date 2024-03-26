@@ -1,0 +1,66 @@
+.auth__page {
+    display: flex;
+    width: 1239px;
+    height: 578px;
+    justify-content: space-between;
+    margin-left: 60px;
+    margin-top: 14px;
+    margin-bottom: 80px;
+}
+
+.auth__page .column {
+    display: flex;
+    flex-direction: column;
+}
+
+.auth__page .column.column--left {
+    width: 755px;
+}
+
+.auth__page .column.column--left .service_name {
+    width: 755px;
+    height: 144px;
+    font-size: 40px;
+    line-height: 48px;
+    letter-spacing: 0.8px;
+    margin-bottom: 0;
+    margin-top: 55px;
+}
+
+.auth__page .column.column--left img {
+    width: 321.76px;
+    height: 342.03px;
+    margin-top: 13.9px;
+    margin-left: 112px;
+}
+
+.auth__page .column.column--right {
+    position: relative;
+    width: 480px;
+    height: 578px;
+}
+
+.auth__page .column.column--right .lock_img {
+    width: 75.22px;
+    height: 92.06px;
+    z-index: 1;
+}
+
+.auth__page .column.column--right .form_auth_block {
+    position: absolute;
+    top: 55px;
+    left: 51px;
+    display: flex;
+    flex-direction: column;
+    width: 429px;
+    height: 523px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px 0px #00000026;
+    z-index: 0;
+}
+
+.auth__page .column.column--right .form_auth_block .form_auth_block_content {
+    width: 379px;
+    margin-top: 25px;
+    margin-left: 25px;
+}
